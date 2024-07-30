@@ -107,7 +107,7 @@ button:nth-child(1):hover{
     background: transparent;
     color: #5DB9EE;
 }
-button:nth-child():hover{
+button:nth-child(2):hover{
     background: #5DB9EE;
     color: #262525;
 }
@@ -161,4 +161,200 @@ transform: translate(-50%,-50%);
     transform:  scalex(1);
     transform-origin: bottom left;
 
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background:#262525;
+}
+    
+.about-img img{
+    width: 35vw;
+
+}
+.heading{
+    text-align: justify;
+    font-size: 3.5rem;
+    color: #fff;
+
+}
+.about-content h2 {
+    text-align: left;
+    line-height: 1.2;
+
+}
+.about-content h3{
+    font-size: 2.6rem;
+    color: aqua;
+
+}
+.about-content p {
+    font-size: 1.4rem;
+    margin: 2rem 0 3rem;
+    color: #fff;
+}
+.btn{
+    border: .1rem solid #5DB9EE;
+    font-size: 1.1rem;
+    padding: .8rem 1.5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: .5s ease;
+    background: #5DB9EE;
+    color: #262525;
+}
+.btn:hover {
+    background: transparent;
+    color: #5DB9EE;
+}
+.services{
+    background: #262525;
+}
+.headings{
+    text-align: center;
+    font-size: 3.5rem;
+    color: aqua;
+
+}
+.services h2 {
+    margin-bottom: 2rem;
+}
+.services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.services-container .services-box {
+    flex: 1 1 30rem;
+    background: lightslategray;
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid #3877FF;
+}
+.services-box i{
+    font-size: 7rem;
+    color: #fff;
+
+}
+.services-box h3 {
+    font-size: 2.5rem;
+
+}
+.services-box p{
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
+}
+.project{
+    background: #5DB9EE;
+
+}
+.project h2{
+    margin-bottom: 4rem;
+}
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+.project-container .project-box{
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem #fff;
+    overflow: hidden;
+    display: flex;
+}
+.project-box img{
+    width: 100%;
+    transition: .5s ease;
+}
+.project-box:hover img{
+    transform: scale(1.1);
+}
+.project-box .project-layer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba (0,0,0,.1) , #3877FF);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+.project-box:hover .project-layer{
+    transform: translateY(0);
+}
+.project-layer h4{
+    font-size: 3rem;
+
+}
+.project-layer p {
+    font-size: 1.5rem;
+    margin: .3rem 0 1rem;
+    color: #bbb;
+
+}
+.project-layer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: #fff;
+    border-radius: 50%;
+}
+.project-layer a i {
+    font-size: 2rem;
+    color: #3877FF;
+}
+.contact h2 {
+    margin-bottom: 3rem;
+
+}
+.contact form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+
+}
+
+.contact form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: #5DB9EE;
+    background: #bbb;
+    border-radius: .8rem;
+    margin: .7rem 0;
+
+}
+.contact form .input-box input{
+    width: 49%;
+
+}
+.contact form textarea{
+    resize: none;
+}
+.contact form .btn{
+    margin-top: 2rem;
+    cursor: pointer;
 }

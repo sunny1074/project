@@ -255,6 +255,7 @@ transform: translate(-50%,-50%);
 }
 .project h2{
     margin-bottom: 4rem;
+    text-align: center;
 }
 .project-container{
     display: grid;
@@ -311,15 +312,20 @@ transform: translate(-50%,-50%);
     align-items: center;
     width: 5rem;
     height: 5rem;
-    background: #fff;
+    background: #262525;
     border-radius: 50%;
 }
 .project-layer a i {
     font-size: 2rem;
     color: #3877FF;
 }
+.contact{
+    background: gray;
+}
 .contact h2 {
     margin-bottom: 3rem;
+    color: #3877FF;
+    text-align: center;
 
 }
 .contact form{
